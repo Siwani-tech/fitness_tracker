@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
 
   const signup = async (userData) => {
     try {
-      const response = await fetch("http://localhost:4000/auth/signup", {
+      const response = await fetch("https://fitness-tracker-cyan-rho.vercel.app/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (userData) => {
     try {
-      const response = await fetch("http://localhost:4000/auth/login", {
+      const response = await fetch("https://fitness-tracker-cyan-rho.vercel.app/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -75,7 +75,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = async () => {
     try {
-      const response = await fetch("http://localhost:4000/auth/logout", {
+      const response = await fetch("https://fitness-tracker-cyan-rho.vercel.app/auth/logout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
